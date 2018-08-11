@@ -12,7 +12,7 @@ class String
 
   def question?
     if self.end_with?("?")
-      return ture 
+      return true 
     else
       return false
     end
@@ -20,7 +20,7 @@ class String
 
   def exclamation?
     if self.end_with?("!")
-      return ture 
+      return true
     else
       return false
     end
