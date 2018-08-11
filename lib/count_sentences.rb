@@ -32,7 +32,11 @@ class String
     if self.split(/[?.!]/).size == 0
       return 0 
     else
-      return sentencesCount
+      if self.split(/[?.!]/).empty?
+        return self.split(/[?.!]/).reject!{|item| item.empty?}.size
+      else
+        return self.split(/[?.!]/).size
+      end
     end
 
   end
