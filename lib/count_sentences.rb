@@ -33,6 +33,7 @@ class String
       return 0 
     else
       isEmpty = self.split(/[?.!]/).any?{|item| item.empty}
+      puts isEmpty
       if isEmpty
         return self.split(/[?.!]/).reject!{|item| item.empty?}.size
       else
@@ -41,5 +42,5 @@ class String
     end
 
   end
-  # "This is a string! It has three sentences. Right?".count_sentences
+  "This is a string! It has three sentences. Right?".count_sentences
 end
