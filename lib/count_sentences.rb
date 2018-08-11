@@ -5,8 +5,9 @@ class String
   def sentence?
     if self.match(/.$/) != nil
       return true
+    else 
+      return false
     end
-    return false
   end
 
   def question?
