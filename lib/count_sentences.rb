@@ -33,7 +33,7 @@ class String
       return 0 
     else
       isEmpty = self.split(/[?.!]/).any?{|item| item.empty?}
-      puts isEmpty
+      # puts isEmpty
       if isEmpty
         return self.split(/[?.!]/).reject!{|item| item.empty?}.size
       else
