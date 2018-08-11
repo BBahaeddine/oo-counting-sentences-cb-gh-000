@@ -3,7 +3,10 @@ require 'pry'
 class String
 
   def sentence?
-    
+    if self.match(/.$/) != nil
+      return true
+    end
+    return false
   end
 
   def question?
