@@ -32,7 +32,8 @@ class String
     if sentencesCount == 0
       return 0 
     else
-      if self.split(/[?.!]/).empty?
+      isEmpty = self.split(/[?.!]/).any?{|item| item.empty}
+      if isEmpty
         return self.split(/[?.!]/).reject!{|item| item.empty?}.size
       else
         return self.split(/[?.!]/).size
