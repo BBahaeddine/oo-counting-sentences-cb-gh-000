@@ -29,7 +29,7 @@ class String
   def count_sentences
     # sentencesCount = self.split(/[?.!]/).reject!{|item| item.empty?}.size
     puts self.split(/[?.!]/).reject!{|item| item.empty?}.size
-    if sentencesCount == 0
+    if self.split(/[?.!]/).size == 0
       return 0 
     else
       return sentencesCount
