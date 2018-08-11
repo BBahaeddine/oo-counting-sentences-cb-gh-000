@@ -40,5 +40,5 @@ class String
     end
 
   end
-  "This is a string! It has three sentences. Right?".count_sentences
+  # "This is a string! It has three sentences. Right?".count_sentences
 end
