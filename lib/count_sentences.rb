@@ -27,7 +27,12 @@ class String
   end
 
   def count_sentences
-    puts self.split(/[?.!]/).size
+    sentencesCount = self.split(/[?.!]/).size
+    if sentencesCount == 0
+      return 0 
+    else
+      return sentencesCount
+    end
 
   end
   "This is a string! It has three sentences. Right?".count_sentences
