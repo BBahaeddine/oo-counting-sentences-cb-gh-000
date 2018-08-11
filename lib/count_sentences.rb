@@ -30,4 +30,5 @@ class String
     puts self.split(/[?.!]/).size
 
   end
+  "This is a string! It has three sentences. Right?".count_sentences
 end
