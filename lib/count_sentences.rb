@@ -32,7 +32,7 @@ class String
     if sentencesCount == 0
       return 0 
     else
-      isEmpty = self.split(/[?.!]/).any?{|item| item.empty}
+      isEmpty = self.split(/[?.!]/).any?{|item| item.empty?}
       puts isEmpty
       if isEmpty
         return self.split(/[?.!]/).reject!{|item| item.empty?}.size
