@@ -36,5 +36,5 @@ class String
     # end
 
   end
-  "This, well, is a sentence. This is too!! And so is this, I think? Woo...".count_sentences
+  "This is a string! It has three sentences. Right?".count_sentences
 end
